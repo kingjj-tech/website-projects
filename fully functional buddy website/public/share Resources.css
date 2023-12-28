@@ -1,0 +1,217 @@
+footer {
+    background: linear-gradient(to right, #f5f5f5, #67a1df);
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: #09f829;
+    /
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://nonprofitlawblog.com/assets/Sharing.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+        z-index: 1;
+    }
+
+    transform: translateZ(0);
+    animation: parallax 10s linear infinite;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+}
+
+
+@keyframes parallax {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+
+
+}
+
+.header {
+    background: linear-gradient(to right, #67a1df, #eeeeee);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: gradientAnimation 3s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-caption {
+    font-size: 36px;
+    margin: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+
+h2 {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.spacer {
+    height: 70px;
+}
+
+p {
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+
+
+    background-color: #f0f0f0;
+    padding: 10px;
+
+    border: 2px solid #555;
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Style for the download button */
+a.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    /* Change the background color as desired */
+    color: #fff;
+    /* Text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the download button */
+a.download-button:hover {
+    background-color: #0056b3;
+    /* Change the hover background color as desired */
+}

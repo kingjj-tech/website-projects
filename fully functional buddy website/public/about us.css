@@ -1,0 +1,139 @@
+header {
+    background: linear-gradient(to right, #67a1df, #eeeeee);
+    color: #fff;
+    padding: 5px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    background: linear-gradient(to right, #f5f5f5, #67a1df);
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: #09f829;
+    /
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.parallax-1,
+.parallax-2 {
+    height: 600px;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.parallax-1 h2,
+.parallax-2 h2 {
+    width: 250px;
+    height: 32px;
+    padding: 10px;
+    margin: auto;
+    background-color: black;
+
+}
+
+.parallax-2 h2 {
+    height: 37px;
+    font-family: Verdana;
+    color: black;
+    background-color: white;
+    font-size: 30px;
+
+
+}
+
+.para-1,
+.para-2 {
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    padding: 50px;
+}
+
+.para-2 {
+    font-family: Verdana;
+    text-align: center;
+    padding: 25px;
+}
+
+.parallax-1 {
+    background-image: url(https://st2.depositphotos.com/3591429/10566/i/950/depositphotos_105666254-stock-photo-business-people-at-meeting-and.jpg);
+}
+
+.parallax-2 {
+    background-image: url(https://img.freepik.com/free-photo/five-open-books-glasses_23-2147690569.jpg?w=2000);
+}
+
+.spacer {
+    height: 70px;
+}
+
+
+p {
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+
+
+    background-color: #f0f0f0;
+    padding: 10px;
+
+    border: 2px solid #555;
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.spacer {
+    height: 70px;
+}

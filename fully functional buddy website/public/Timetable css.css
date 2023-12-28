@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(6, 151, 247);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td:nth-child(1) {
+    font-weight: bold;
+}
+
+
+td:hover {
+    background-color: #b2e8b2;
+
+}
+
+.break-row td {
+    background-color: #87a1bb;
+
+}
+
+
+footer {
+    background: linear-gradient(to right, #f5f5f5, #67a1df);
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: #09f829;
+
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i0.wp.com/thewomenslibrary.org.au/wp-content/uploads/2023/01/Herland2019_Mielamalyon-cropped-scaled.jpg?resize=1400%2C1054&ssl=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+        z-index: 1;
+    }
+
+
+    transform: translateZ(0);
+    animation: parallax 10s linear infinite;
+
+}
+
+
+@keyframes parallax {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+
+
+}
+
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+}
+
+.btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+    margin-top: 35px;
+    margin-left: 620px;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+#clock {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: orange;
+    margin-top: 10px;
+}

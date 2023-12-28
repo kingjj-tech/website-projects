@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Collaborative Learning Platform</title>
+    <link rel="stylesheet" href="discussion.css">
+    <link rel="icon" type="image/x-icon" href="https://ctutraining.ac.za/wp-content/uploads/2023/06/MetaImage.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <header>
+        <h1>Collaborative Learning</h1>
+
+    </header>
+
+    <main>
+        <section>
+            <h2 class="animate__animated animate__bounceInUp" style="color: rgb(221, 18, 221);" id="welcome-message">
+                Welcome, <span id="user-name">Guest</span>!</h2>
+            <p>Ask a question or participate in discussions to enhance your learning.</p>
+            <form id="question-form">
+                <textarea name="question" placeholder="Ask your question here" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="discussion-section">
+            <h2>Discussion Thread</h2>
+            <ul id="discussion-list">
+                <li>
+                    <h3>What is Pseudocode?</h3>
+                    <ul class="replies">
+                        <li>
+                            <strong style="color: orange;">Yandi:</strong> i dont know, i just started programming.
+
+                        </li>
+                        <li>
+                            <strong style="color: orange;">Mpho:</strong> Pseudocode is an informal way of programming
+                            description that does
+                            not require any strict programming language syntax or underlying technology considerations
+
+                        </li>
+                        <li>
+                            <strong style="color: orange;">Martin:</strong> false code
+
+                        </li>
+
+                        <li>
+                            <b>
+                                <p>Question closed</p>
+                            </b>
+
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <div id="reply-sent-message" class="message hidden">Reply sent!</div>
+
+    <script>
+        const userName = prompt("Please enter your name:");
+        const userNameElement = document.getElementById('user-name');
+
+        if (userName && userName.trim() !== '') {
+            userNameElement.textContent = userName.trim();
+        } else {
+            userNameElement.textContent = 'Guest';
+        }
+
+    </script>
+
+
+    <script>
+
+        const discussionList = document.getElementById('discussion-list');
+        const questionForm = document.getElementById('question-form');
+        const replySentMessage = document.getElementById('reply-sent-message');
+
+        questionForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const questionText = e.target.elements.question.value;
+
+            addQuestionToDiscussion(questionText);
+            questionForm.reset();
+        });
+
+        let replyFormCounter = 0; // Initialize a counter for reply forms
+
+        function addQuestionToDiscussion(question) {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+        <h3>${question}</h3>
+        <ul class="replies" id="replies-${replyFormCounter}">
+            <!-- You can add replies to the question dynamically using JavaScript -->
+        </ul>
+        <form class='nested-reply-form' id="reply-form-${replyFormCounter}">
+            <input type="text" name="reply" placeholder="Write your reply here" required>
+            <button type="submit">Reply</button>
+        </form>
+    `;
+            discussionList.appendChild(listItem);
+
+            replyFormCounter++; // Increment the counter for the next reply form
+        }
+
+        discussionList.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const replyForm = e.target;
+
+            // Check if the form has the "nested-reply-form" class
+            if (replyForm.classList.contains('nested-reply-form')) {
+                const replyText = replyForm.elements.reply.value;
+
+                // Find the parent question element (li) and its unique identifier
+                const questionItem = replyForm.closest('li');
+                const questionId = questionItem.querySelector('ul.replies').id;
+
+                if (replyText.trim() !== '') {
+                    const replyItem = createReplyElement(replyText);
+                    const repliesList = document.getElementById(questionId); // Use the unique identifier to target the correct replies list
+                    repliesList.appendChild(replyItem);
+                    replyForm.reset();
+
+                    showReplySentMessage();
+                }
+            }
+        });
+
+
+        function showReplySentMessage() {
+            replySentMessage.classList.remove('hidden');
+            setTimeout(() => {
+                replySentMessage.classList.add('hidden');
+            }, 3000);
+        }
+
+
+
+    </script>
+
+
+    <script>
+        // Add an event listener for reply forms
+        document.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const replyForm = e.target;
+
+            // Check if the form has the "nested-reply-form" class
+            if (replyForm.classList.contains('nested-reply-form')) {
+                const replyText = replyForm.elements.reply.value;
+
+                if (replyText.trim() !== '') {
+                    const replyItem = createReplyElement(replyText);
+                    const repliesList = replyForm.parentElement.querySelector('.replies');
+                    repliesList.appendChild(replyItem);
+                    replyForm.reset();
+                }
+            }
+        });
+
+        function createReplyElement(replyText) {
+            const replyItem = document.createElement('li');
+            replyItem.innerHTML = `
+        <strong style="color: orange;">${userName}:</strong> ${replyText}
+    `;
+            return replyItem;
+        }
+
+    </script>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="CTU-Buddy.html"> <i class="fas fa-home"></i></i> Home</a></li>
+            <li><a href="Timetable.html"> <i class="far fa-clock"></i> TimeTable</a></li>
+            <li><a href="Share Resources.html"> <i class="fas fa-comments"></i> Share Resources</a></li>
+            <li><a href="Contact Us.html"> <i class="far fa-envelope"></i> Contact Us</a></li>
+            <li><a href="About Us.html"> <i class="far fa-address-card"></i> About Us</a></li>
+        </ul>
+        © 2023 Green Goblins All rights reserved.
+    </footer>
+</body>
+
+</html>
