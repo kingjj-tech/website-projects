@@ -1,0 +1,170 @@
+/* Add this to your 'decor.css' or a new CSS file */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-image: url("https://educational-innovation.sydney.edu.au/teaching@sydney/wp-content/uploads/2017/08/shutterstock_55638358-e1503470700829-770x577.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 60px;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  display: flex;
+  flex-direction: column;
+  /* Set the flex container to column direction */
+  min-height: 100vh;
+}
+
+header {
+  background-color: #341d44;
+  padding: 20px;
+  color: #ffffff;
+  padding: 16px;
+
+}
+
+.h2 {
+  font-size: larger;
+
+}
+
+header h1 {
+  margin: 0;
+  line-height: normal;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a:hover {
+  background-color: rgb(178, 5, 109);
+  color: white; /* Optionally change the text color for better visibility */
+  border-radius: 70%;
+}
+
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.search-container {
+  display: inline-block;
+
+  margin-top: 10px;
+}
+
+.search-input {
+  padding: 5px;
+}
+
+.search-button {
+  padding: 5px;
+  background-color: #5d0082;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+main {
+  padding: 32px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  flex: 1; 
+}
+
+section#discussion {
+  background-color: #5d0082;
+  padding: 20px;
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-profile h3,
+.user-profile p {
+  margin: 5px 0;
+}
+
+.discussion-thread {
+  background-color: #004196;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Add a box shadow to the discussion thread */
+}
+
+.thread-post,
+.reply {
+  background-color: #32004a;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* Add a box shadow to each post and reply */
+}
+
+.thread-post .post-content,
+.reply .reply-content {
+  margin: 5px 0;
+}
+
+.reply-button {
+  background-color: #5d0082;
+  border: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.new-post {
+  background-color: #4b0065;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.new-post textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.new-post button {
+  background-color: #5d0082;
+  border: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(to top, #660b36, #6e07cf);
+  color: #fff;
+  padding: 16px;
+  width: 100%;
+  position: fixed;
+  /* Set the footer position to fixed */
+  bottom: 0;
+  /* Position the footer at the bottom */
+  left: 0;
+  /* Position the footer at the left */
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTU-Buddy</title>
+    <link rel="stylesheet" href="decor.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+  </head>
+  <body>
+    <header>
+        
+      <h1>City Technical University - CTU Buddy</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="timeTable.html"><i class="far fa-clock"></i> Timetable</a></li>
+          <li><a href="discussion.html"><i class="fas fa-comments"></i> Discussion</a></li>
+          <li><a href="shareResources.html"><i class="fas fa-share-alt"></i> Share Resources</a></li>
+          <li><a href="aboutUs.html"><i class="far fa-address-card"></i> About Us</a></li>
+          <li><a href="contactUs.html"><i class="far fa-envelope"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input type="text" placeholder="Search" name="search" class="search-input">
+          <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3 class="card-text">About Us</h3>
+        </div>
+        <div class="flip-card-back">
+          
+          <div class="card-content">
+            <p class="card-paragraph">
+              At CTU, we are committed to enriching our students' lives by providing them with exceptional education and unwavering support. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <h1 class="animate__animated animate__bounce">welcome to ctu buddies!!</h1>
+        <p class=" animate__animated animate__lightSpeedInLeft">
+          <strong>Enhancing your learning experience, and embracing your future career at City Technical University .</strong>
+        </p>
+       
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <a href="timeTable.html">
+            <img
+              src="https://c8.alamy.com/comp/2GH8E5M/flat-back-to-school-timetable-template-vector-illustration-2GH8E5M.jpg"
+              alt="Timetable" 
+            />
+          </a>
+          <h3>Interactive Timetable</h3>
+          <p>
+            Stay organized with our interactive timetable that helps you manage
+            your classes and assignments efficiently.
+          </p>
+        </div>
+        <div class="feature">
+          <a href="discussion.html">
+            <img
+              src="https://as2.ftcdn.net/v2/jpg/04/88/97/47/1000_F_488974717_b2rmDzRYiy7VTW05MXDBZQ8ZB8unf1JY.jpg"
+              alt="Feature 2"
+              />
+          </a>
+          <h3>Engaging Discussions</h3>
+          <p>
+            Participate in interactive discussions with fellow students and
+            professors to enhance your understanding of the subjects.
+          </p>
+        </div>
+        <div class="feature">
+          <a href="shareResources.html">
+            <img
+            src="https://c8.alamy.com/comp/F584F7/human-resources-and-global-business-strategy-concept-F584F7.jpg"
+            alt="Feature 3"
+              />
+          </a>
+          <h3>Share Resources</h3>
+          <p>
+            Share study materials and resources with other students, fostering a
+            collaborative learning environment hERE at CTU
+          </p>
+          
+          
+        </div>
+      </section>
+    </main>
+    <script src="homie.js"></script>
+    <footer>
+      <p>&copy; 2023 CTU-Buddy. All rights reserve</p>
+
+      <div class="social-links mt-3 text-center">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/junior_jj85?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
+

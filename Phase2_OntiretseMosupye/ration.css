@@ -1,0 +1,146 @@
+/* Reset CSS */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://cdn.theatlantic.com/thumbor/O5zzZrTztjH4WQkLz_PK0EizjJo=/0x18:960x522/960x504/media/img/mt/2021/12/AT_EOY_BestBooks_16x9/original.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 60px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+  background-color: #341d44;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 16px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 32px;
+}
+
+/* Apply the purple border around the timetable */
+.table-container {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Style the timetable table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+thead th,
+tbody td {
+  border: 1px solid #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+tbody td {
+  white-space: nowrap;
+}
+
+/* Style the floating bubble */
+.bubble-container {
+  position: relative;
+}
+
+.floating-bubble {
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  position: absolute;
+  top: 100px; /* Adjust the top value to prevent overlap with the timetable */
+  right: 20px;
+  width: 200px;
+  color: #fff;
+}
+
+.floating-bubble h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}
+
+.floating-bubble p {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  padding: 32px;
+  display: flex;
+  flex-direction: column; /* Set the flex container to column direction */
+  align-items: center; /* Center the content horizontally */
+}
+
+/* Style the floating bubble */
+.bubble-container {
+  display: flex;
+  justify-content: flex-end; /* Align the bubble to the right */
+  margin-top: 20px; /* Adjust the top margin for spacing */
+  
+}
+
+.floating-bubble {
+  background: linear-gradient(to right, #660b36, #6e07cf); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+  width: fit-content; /* Adjust width to fit content */
+
+  color: #fff;
+  position: relative; /* Change to relative positioning */
+  display: inline-block; /* Allow bubble to fit both horizontally and vertically */
+  margin-bottom: 10px; /* Adjust margin to move the bubble closer to the header */
+  
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  background: linear-gradient(to top, #660b36, #6e07cf);
+  color: #fff;
+  padding: 16px;
+  width: 100%;
+  position: fixed; /* Set the footer position to fixed */
+  bottom: 0; /* Position the footer at the bottom */
+  left: 0; /* Position the footer at the left */
+}
+/* ... Your existing CSS ... */

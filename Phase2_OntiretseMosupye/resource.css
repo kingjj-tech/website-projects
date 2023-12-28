@@ -1,0 +1,84 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://www.sentinelone.com/wp-content/uploads/2022/03/Announcement_Attivo_PR_BG-1600x900.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 60px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  flex-direction: column; /* Set the flex container to column direction */
+  min-height: 100vh;
+}
+
+header {
+  background-color: #341d44;
+  color: #fff;
+
+  padding: 16px;
+}
+
+h1 {
+    margin: 0;
+  text-align: center;
+  
+  
+  
+  }
+
+
+.center-content {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .center-content a {
+    color: rgb(202, 2, 202); /* Change this to your desired link color */
+    text-decoration: none; /* Remove the underline from the links */
+  }
+  
+  .center-content a:hover {
+    color: rgb(4, 229, 245); /* Change this to the color when hovering over the links */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 16px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    background: linear-gradient(to top, #660b36, #6e07cf);
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust the height as needed */
+  }
+ 
+  

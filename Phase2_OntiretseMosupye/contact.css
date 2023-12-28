@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://t4.ftcdn.net/jpg/04/80/12/53/360_F_480125320_Y2fVhlrxL9nTKs8rXJEjwdNmWY1Fnfxj.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 60px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    display: flex;
+    flex-direction: column; /* Set the flex container to column direction */
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+  }
+  
+  header {
+    background-color: #341d44;
+    color: #fff;
+    
+    padding: 16px;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 16px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 32px;
+    max-width: 1200px; /* Set a maximum width for the main content */
+    margin: 0 auto; /* Center the main content */
+    flex: 1; /* Let the main content take the remaining available space */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+
+
+
+
+.contact-form {
+    max-width: 900px; /* Increase the maximum width to 900px (adjust the value as needed) */
+    margin: 0 auto;
+    padding: 30px; /* Increase the padding to create more space inside the form */
+    border: 2px solid #ccc; /* Increase the border width to 2px */
+    border-radius: 8px; /* Increase the border radius for a more rounded appearance */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add the box shadow to create a shadow border */
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    font-size: 24px; /* Increase the font size for the form heading */
+    margin-bottom: 20px;
+  }
+  
+  .contact-form p {
+    text-align: center;
+    font-size: 18px; /* Increase the font size for the form paragraph */
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px; /* Increase the font size for the form labels */
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="number"] {
+    width: 100%;
+    padding: 15px; /* Increase the padding to make input fields larger */
+    margin-bottom: 20px; /* Increase the margin-bottom for more spacing between input fields */
+    border: 2px solid #ccc; /* Increase the border width for input fields */
+    border-radius: 8px; /* Increase the border radius for input fields */
+    box-sizing: border-box;
+    font-size: 16px; /* Increase the font size for input fields */
+  }
+  
+  .contact-form button[type="submit"] {
+    width: 100%;
+    padding: 15px; /* Increase the padding for the submit button */
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 8px; /* Increase the border radius for the submit button */
+    cursor: pointer;
+    font-size: 18px; /* Increase the font size for the submit button */
+  }
+ 
+  footer {
+    text-align: center;
+    background: linear-gradient(to top, #660b36, #6e07cf);
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    position: fixed; /* Set the footer position to fixed */
+    bottom: 0; /* Position the footer at the bottom */
+    left: 0; /* Position the footer at the left */
+  }
+  
+  
+  
+.edit {
+  padding-top: 20px; /* Adjust the top padding as needed */
+  border: 2px solid purple; /* Set the border width and color */
+  border-radius: 10px; /* Add rounded corners for a nicer look */
+}
+
+

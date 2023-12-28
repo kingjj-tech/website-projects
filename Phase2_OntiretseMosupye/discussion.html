@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTU-Buddy</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="disscuss.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+</head>
+<body>
+  <header>
+    <h1>City Technical University - CTU Buddy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="timeTable.html"><i class="far fa-clock"></i> Timetable</a></li>
+        <li><a href="discussion.html"><i class="fas fa-comments"></i> Discussion</a></li>
+        <li><a href="shareResources.html"><i class="fas fa-share-alt"></i> Share Resources</a></li>
+        <li><a href="aboutUs.html"><i class="far fa-address-card"></i> About Us</a></li>
+        <li><a href="contactUs.html"><i class="far fa-envelope"></i> Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-container">
+      <form action="/search" method="get">
+        <input type="text" placeholder="Search" name="search" class="search-input">
+        <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section id="discussion">
+      <h2 class=" animate__animated animate__jello">Discussion</h2>
+
+      <!-- User Profile -->
+      <div class="user-profile">
+        <img src="https://variety.com/wp-content/uploads/2023/05/Screen-Shot-2023-05-31-at-8.38.43-AM.png" alt="User Avatar">
+        <h3>KEN</h3>
+        <p>Computer Science Student</p>
+      </div>
+
+      <!-- Discussion Thread -->
+      <div class="discussion-thread" id="discussion-thread">
+          <div class="animate__animated animate__lightSpeedInLeft">
+            <div class="thread-post">
+              <div class="user-profile">
+                <img src="https://variety.com/wp-content/uploads/2023/07/MCDBARB_WB059.jpg?w=1000&h=563&crop=1" alt="User Avatar">
+                <h3>Barbie</h3>
+                <p>Electrical Engineering Student</p>
+              </div>
+              <p class="post-content" class="">I have a question about circuit analysis. Can anyone help me with this?</p>
+              <button class="reply-button">Reply</button>
+            </div>
+          </div> 
+
+        <!-- Replies -->
+        <div class="replies">
+          <div class="animate__animated animate__lightSpeedInRight">
+            <div class="reply">
+              <div class="user-profile">
+                <img src="https://www.hindustantimes.com/ht-img/img/2023/07/20/1600x900/Oppenheimer_1689841704290_1689841712638.jpg" alt="oppenheimer">
+                <h3>Oppenheimer</h3>
+                <p>Mechanical Engineering Student</p>
+              </div>
+              <p class="reply-content">Sure, I can help you with circuit analysis. What specifically do you need assistance with?</p>
+              <button class="reply-button">Reply</button>
+            </div>
+          </div>
+
+          <!-- Add more replies here -->
+          <div class="replies">
+            <div class="animate__animated animate__lightSpeedInLeft">
+              <div class="reply">
+                <div class="user-profile">
+                  <img src="https://i0.wp.com/film-bunker.com/wp-content/uploads/2019/11/https___hypebeast.com_image_2019_09_dr-stone-documentary-hypebeast-exclusive-clip-00.jpg?fit=900%2C600&ssl=1" alt="oppenheimer">
+                  <h3>Dr Stone</h3>
+                  <p>Physics student </p>
+                </div>
+                <p class="reply-content">Nahhh bro, you do way more physics than me how dare you ask for help at your big age</p>
+                <button class="reply-button">Reply</button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Add New Post -->
+      <div class="new-post">
+        <h3>Post a New Question</h3>
+        <form id="post-form">
+          <div class="user-profile">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/157/838/desktop-wallpaper-the-uncle-ruckus-reality-show-uncle-ruckus-thumbnail.jpg" alt="User Avatar">
+            <h3>Uncle Ruckus</h3>
+            <p>The organization</p>
+          </div>
+          
+          <textarea id="post-content" name="post-content" placeholder="Write your question here..." required></textarea>
+          
+          <button type="submit">Post</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 CTU-Buddy. All rights reserve</p>
+  </footer>
+  <script src="function.js"></script>
+
+</body>
+</html>

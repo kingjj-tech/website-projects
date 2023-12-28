@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTU-Buddy</title>
+    <link rel="icon" href="paper-cut-art-open-book-with-learning-education-explore_44481-332.avif" type="image/x-icon">
+    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>City Technical University - CTU Buddy</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="timeTable.html"><i class="far fa-clock"></i> Timetable</a>
+          </li>
+          <li>
+            <a href="discussion.html"
+              ><i class="fas fa-comments"></i> Discussion</a
+            >
+          </li>
+          <li>
+            <a href="shareResources.html"
+              ><i class="fas fa-share-alt"></i> Share Resources</a
+            >
+          </li>
+          <li>
+            <a href="aboutUs.html"
+              ><i class="far fa-address-card"></i> About Us</a
+            >
+          </li>
+          <li>
+            <a href="contactUs.html"
+              ><i class="far fa-envelope"></i> Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input
+            type="text"
+            placeholder="Search"
+            name="search"
+            class="search-input"
+          />
+          <button type="submit" class="search-button">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <p>We will get back to you!</p>
+        <p>ontiretse Mosupye </p>
+        <br><br>
+        <h3>icas = 20230541</h3>
+
+        <form action="thankYou.html" method="post">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required />
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required />
+
+          <label for="phone"
+            ><i class="material-icons">phone</i>Phone Number:</label
+          >
+          <input type="number" id="phone" name="phone" required />
+
+          <label for="email"><i class="material-icons">email</i> Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Send</button>
+        </form>
+
+        <div class="edit">
+        
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28806.708537550196!2d28.0326445!3d-25.5104299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfceb24fa793ff%3A0x97547ed95cc3a034!2sMabopane%20Unit%20U%2C%20Mabopane%2C%200190!5e0!3m2!1sen!2sza!4v1696524095186!5m2!1sen!2sza" 
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 CTU-Buddy. All rights reserve</p>
+    </footer>
+  </body>
+</html>
